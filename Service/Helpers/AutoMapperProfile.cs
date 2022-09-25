@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using PagedList;
 
 namespace Service.Helpers
 {
@@ -14,7 +15,7 @@ namespace Service.Helpers
         public AutoMapperProfile()
         {
             CreateMap<Customer, CustomerDTO>();
-            CreateMap<CustomerDTO,Customer>();
+            CreateMap<CustomerDTO,Customer>();            
         }
     }
 }

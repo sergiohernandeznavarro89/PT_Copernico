@@ -25,10 +25,7 @@ namespace Database.Migrations
             modelBuilder.Entity("Database.BD.Models.Customer", b =>
                 {
                     b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
                     b.Property<string>("company")
                         .IsRequired()
