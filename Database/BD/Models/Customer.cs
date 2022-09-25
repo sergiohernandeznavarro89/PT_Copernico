@@ -11,7 +11,7 @@ namespace Database.BD.Models
     public class Customer
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int id { get; set; }
         public string email { get; set; }
         public string first { get; set; }
